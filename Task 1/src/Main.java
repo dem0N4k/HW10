@@ -25,13 +25,11 @@ public class Main {
         return new Scanner(System.in).nextInt();
     }
 
-    public static void addBook(String bookName) {
-        addBook(bookName, 0);
-    }
     public static void addBook(String bookName, int pageCount) {
         booksInfo = booksInfo + bookName + " - " + (pageCount > 0 ? pageCount : "N/A") + " стр.";
     }
-    public static void addBookPrice (double priceBook) {
+
+    public static void addBookPrice(double priceBook) {
         booksInfo = booksInfo + " - " + (priceBook > 0 ? priceBook : "N/A") + " руб.\n";
     }
 
